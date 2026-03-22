@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivansh Singh | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
+</head>
+
+<body>
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Portfolio<span></span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <div class="theme-toggle" id="theme-toggle" title="Toggle Light/Dark Mode">
+                    <i class="fas fa-sun"></i>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container hero-content fade-in">
+            <div class="hero-text">
+                <p class="greeting">Hi, my name is</p>
+                <h1 class="name">Shivansh Singh.</h1>
+                <h2 class="role">I build reliable software & data solutions.</h2>
+                <p class="summary">
+                    A Computer Science Engineering student passionate about Data Science, Machine Learning, and Software
+                    Development. I create intelligent systems and robust applications.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in">
+                <img src="profile.jpeg" alt="Shivansh Singh" class="profile-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <div class="about-content fade-in">
+                <div class="about-text">
+                    <p>Hello! I'm <strong>Shivansh Singh</strong>, currently pursuing a B.Tech in Computer Science and
+                        Engineering at Lovely Professional University. My journey in tech revolves around solving
+                        complex problems and turning data into actionable insights.</p>
+                    <p>I have a strong foundation in C++ and Python, with a deep interest in Data Structures,
+                        Algorithms, and Machine Learning. Whether it's building a deep learning model for emotion
+                        recognition or developing software tools, I love the process of creating technology that makes
+                        an impact.</p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <i class="fas fa-graduation-cap highlight-icon"></i>
+                        <h3>B.Tech CSE</h3>
+                        <p>Lovely Professional University</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills section-padding bg-alt">
+        <div class="container">
+            <h2 class="section-title fade-in">Skills & Technologies</h2>
+            <div class="skills-grid fade-in">
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Programming</h3>
+                    <ul class="skill-list">
+                        <li><span>C++</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                        </li>
+                        <li><span>Python</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                        </li>
+                        <li><span>Java</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;"></div>
+                            </div>
+                        </li>
+                        <li><span>SQL</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                        <li><span>HTML/CSS</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-line"></i> Data Science</h3>
+                    <ul class="skill-list">
+                        <li><span>Pandas / NumPy</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                        </li>
+                        <li><span>Scikit-learn</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                        <li><span>TensorFlow</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;"></div>
+                            </div>
+                        </li>
+                        <li><span>Matplotlib / Seaborn</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Soft Skills</h3>
+                    <div class="tag-cloud">
+                        <span class="tag">Git</span>
+                        <span class="tag">Jupyter</span>
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Leadership</span>
+                        <span class="tag">Problem-Solving</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card fade-in">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="far fa-folder project-folder"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/Shivanshsingh003" target="_blank"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Face Emotion Recognition</h3>
+                        <p class="project-desc">Processed 30K+ facial images, engineering a pipeline for emotion
+                            classification. Trained a CNN model achieving 92%+ accuracy.</p>
+                        <ul class="project-tech-list">
+                            <li>Python</li>
+                            <li>TensorFlow</li>
+                            <li>Pandas</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="far fa-folder project-folder"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/Shivanshsingh003" target="_blank"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Crime Analysis Dashboard</h3>
+                        <p class="project-desc">Analyzed 10K+ crime records to identify trends across locations and
+                            time, deriving insights to support law enforcement planning.</p>
+                        <ul class="project-tech-list">
+                            <li>Excel</li>
+                            <li>Data Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="far fa-folder project-folder"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/Shivanshsingh003" target="_blank"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Python Voting App</h3>
+                        <p class="project-desc">Developed a GUI-based Voting Application simulating a secure,
+                            user-friendly voting system using Tkinter.</p>
+                        <ul class="project-tech-list">
+                            <li>Python</li>
+                            <li>Tkinter</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience section-padding bg-alt">
+        <div class="container">
+            <h2 class="section-title fade-in">Experience & Education</h2>
+            <div class="timeline fade-in">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jun 2025 – Jul 2025</span>
+                        <h3>Trainee - DSA</h3>
+                        <h4>Centre of Professional Enhancement</h4>
+                        <p>Mastered core and advanced DSA using C++.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Aug 2023 – Present</span>
+                        <h3>B.Tech - CSE</h3>
+                        <h4>Lovely Professional University, Punjab, India</h4>
+                        <p>CGPA: 7.57. Active in programming, solved 150+ LeetCode problems.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Apr 2021 – Mar 2022</span>
+                        <h3>12th Grade (Intermediate)</h3>
+                        <h4>St. Johns School, Varanasi, Uttar Pradesh</h4>
+                        <p>Percentage: 80%</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Apr 2019 – Mar 2020</span>
+                        <h3>10th Grade (Matriculation)</h3>
+                        <h4>St. Johns School</h4>
+                        <p>Percentage: 88%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="certifications section-padding">
+        <div class="container">
+            <h2 class="section-title fade-in">Certifications</h2>
+            <div class="project-grid">
+                <div class="project-card fade-in">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-award project-folder"></i>
+                            <div class="project-links">
+                                <a href="https://drive.google.com/file/d/1JN16kRU1ou6qX8ktfRhrkyDPHg5LMeON/view"
+                                    title="Link to NPTEL certification" target="_blank"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Cloud Computing with Elite Performance</h3>
+                        <p class="project-desc">NPTEL</p>
+                        <ul class="project-tech-list">
+                            <li>Oct 2025</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-award project-folder"></i>
+                            <div class="project-links">
+                                <a href="https://drive.google.com/file/d/1O9Lr9bOJL5MyQi63g7xBTyFsPKVdUSz2/view"
+                                    title="Link to Oracle certification" target="_blank"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">OCI 2025 Certified Data Science Professional</h3>
+                        <p class="project-desc">Oracle</p>
+                        <ul class="project-tech-list">
+                            <li>2025</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section-padding bg-alt">
+        <div class="container">
+            <h2 class="section-title fade-in">Get In Touch</h2>
+            <div class="contact-content fade-in">
+                <div class="contact-info">
+                    <p class="contact-text">I am currently open to new opportunities, collaborations, and projects.
+                        Let's connect!</p>
+                    <div class="contact-details">
+                        <div class="contact-item"><i class="fas fa-envelope"></i> <a
+                                href="mailto:003shivansh@gmail.com">003shivansh@gmail.com</a></div>
+                        <div class="contact-item"><i class="fas fa-phone-alt"></i> <a href="tel:+918470852622">+91
+                                8470852622</a></div>
+                        <div class="contact-item"><i class="fab fa-linkedin"></i> <a
+                                href="https://linkedin.com/in/shivanshsingh276" target="_blank">LinkedIn</a></div>
+                        <div class="contact-item"><i class="fab fa-github"></i> <a
+                                href="https://github.com/Shivanshsingh003" target="_blank">GitHub</a></div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group"><input type="text" id="name" placeholder="Your Name" required></div>
+                    <div class="form-group"><input type="email" id="email" placeholder="Your Email" required></div>
+                    <div class="form-group"><textarea id="message" rows="5" placeholder="Your Message"
+                            required></textarea></div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2025 Shivansh Singh. Built with HTML, CSS & JS.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
